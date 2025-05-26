@@ -19,7 +19,7 @@ const Projects = () => {
       description: 'Created a responsive portfolio website using React.js with modern UI/UX design principles. Features include dark theme, smooth animations, dynamic routing, and mobile-first approach. Implemented using React Router, Framer Motion, and styled with CSS modules.',
       technologies: ['React.js', 'Framer Motion', 'CSS3', 'HTML5', 'JavaScript', 'Git'],
       github: 'https://github.com/Su-Deepthi/portfolio',
-      live: 'https://su-deepthi.github.io/portfolio-website/'
+      live: null
     },
     {
       title: 'Healthcare Management System',
