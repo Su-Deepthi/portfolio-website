@@ -1,0 +1,126 @@
+.skills {
+  padding: 4rem 2rem;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(45deg, #3a86ff, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(58, 134, 255, 0.1);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-icon {
+  font-size: 1.5rem;
+  color: #3a86ff;
+  background: rgba(58, 134, 255, 0.1);
+  padding: 0.8rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover .category-icon {
+  background: rgba(58, 134, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.category-header h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-item {
+  color: #a0aec0;
+  padding: 0.8rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-item:hover {
+  background: rgba(58, 134, 255, 0.1);
+  color: #fff;
+  transform: translateX(5px);
+  border-color: rgba(58, 134, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for skill items */
+@keyframes skillFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
