@@ -38,9 +38,6 @@ const Home = () => {
             <a href="/contact" className="btn primary">
               <span>Get In Touch</span>
             </a>
-            <a href="/projects" className="btn secondary">
-              <span>View My Work</span>
-            </a>
           </div>
 
           <div className="social-links">
@@ -53,7 +50,7 @@ const Home = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/Su-Deepthi" 
               target="_blank" 
               rel="noopener noreferrer"
               className="social-link"
