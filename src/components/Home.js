@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -35,9 +36,9 @@ const Home = () => {
           </div>
 
           <div className="cta-buttons">
-            <a href="/contact" className="btn primary">
+            <Link to="/contact" className="btn primary">
               <span>Get In Touch</span>
-            </a>
+            </Link>
           </div>
 
           <div className="social-links">
